@@ -1,6 +1,6 @@
-# 🗣️ Text to Speech — Conversor de texto a voz
+# Text to Speech — Free Online Tool
 
-**Free Text to Speech Converter.** Convert text to speech with two engines: your browser's system voices (instant playback) or neural AI MMS models in 6 languages (downloadable WAV). No sign-up, no ads, 100% client-side.
+**Text to Speech.** Listen to any text with your system's voices. Adjustable rate, pitch and volume. Plus an offline neural engine. No sign-up, no ads, 100% client-side.
 
 🌐 **Demo en vivo / Live demo:** [miguelacm.es/tools/text-to-speech](https://miguelacm.es/tools/text-to-speech)
 
@@ -13,13 +13,9 @@
 
 ## ✨ Features
 
-- **2 motores / 2 engines:** system voices (Web Speech API) or neural AI (Transformers.js)
-- **6 idiomas IA / 6 AI languages:** Spanish, English, French, German, Italian, Portuguese
-- **Descarga en modo IA / Downloadable in AI mode:** real WAV audio file, not just playback
-- **Sin límite / No limit:** long text auto-splits into sentence chunks
-- **Sin servidor / Zero server:** Everything runs in the browser — nothing is ever uploaded
-- **Embebible / Embeddable:** Use it as an iframe on any website
-- **Open source:** MIT license, use it freely
+- **🗣️ System voices:** Web Speech API with rate, pitch and volume controls.
+- **🤖 Neural engine:** Optional MMS model runs fully offline and exports .wav.
+- **🔒 100% private:** Both engines run on your device.
 
 ---
 
@@ -45,15 +41,13 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/text-to-speech
 
 ## 📦 Embed on your website
 
-### Iframe (plug & play)
-
 ```html
 <iframe
   src="https://miguelacm.es/embed/text-to-speech"
   width="100%"
   height="700"
   style="border:none;border-radius:12px;"
-  title="Texto a Voz Online Gratis — Conversor TTS con Voces del Sistema y IA — miguelacm.es"
+  title="Text to Speech — miguelacm.es"
   loading="lazy"
 ></iframe>
 ```
@@ -62,11 +56,11 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/text-to-speech
 
 ```html
 <a href="https://miguelacm.es/tools/text-to-speech" target="_blank" rel="noopener">
-  Conversor de texto a voz gratis por MACM
+  Text to Speech — free tool by MACM
 </a>
 ```
 
-> 💡 The link option generates a real backlink that benefits the project. Recommended if your platform supports custom HTML.
+> 💡 The link option generates a real backlink that benefits the project.
 
 ---
 
@@ -74,11 +68,11 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/text-to-speech
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Next.js](https://nextjs.org) | 16 | React framework + SSG |
+| [Next.js](https://nextjs.org) | 16 | React framework |
 | [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
 | [Tailwind CSS](https://tailwindcss.com) | 4 | Styling |
 | [react-icons](https://react-icons.github.io/react-icons/) | 5 | Icons |
-| [Transformers.js](https://huggingface.co/docs/transformers.js) | 4 | AI model inference (in-browser) |
+| `@huggingface/transformers` | — | Core logic |
 
 ---
 
